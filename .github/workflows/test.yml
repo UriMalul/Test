@@ -1,0 +1,14 @@
+name: Print Text Workflow
+
+on: [push]
+
+jobs:
+  print_text_job:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        
+      - name: Print Text
+        run: echo "Hello, this is a GitHub Actions workflow printing text!"
